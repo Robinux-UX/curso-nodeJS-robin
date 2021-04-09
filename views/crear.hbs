@@ -1,0 +1,24 @@
+{{>header}}
+
+<h1>Crear al curso</h1>
+{{{crearCurso id nombreCurso costo}}}
+    
+<form action="/crear" method="POST">
+      <div class="row">
+        <div class="col-sm">
+            <label for="id" class="form-label">Id</label>
+            <input type="text" class="form-control" name="id" required>
+            <br>
+            <label for="nombreCurso" class="form-label">Nombre de curso</label>
+            <input type="text" class="form-control" name="nombreCurso" required>
+             <br>           
+            <label for="costo" class="form-label">costo</label>
+            <input type="text" class="form-control" name="costo" required>
+        </div>
+        <div class="col-sm">
+            <input type="submit" name="Enviar" class='form-control btn btn-primary'>
+        </div>
+      </div>
+  </form>
+
+{{>footer}}
